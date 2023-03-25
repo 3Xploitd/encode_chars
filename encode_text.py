@@ -5,7 +5,7 @@ def encode_text(string):
     for line in string:
         line = hex(ord(line))
         text.append(f'chr({line})')
-    print("±".join(text))
+    print("+".join(text))
     
     
 encode_text(sys.argv[1])
